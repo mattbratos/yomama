@@ -1,0 +1,236 @@
+:root {
+  --paper: #fff8ef;
+  --ink: #1f1b18;
+  --muted: #5c534c;
+  --accent: #ff6b35;
+  --accent-soft: #ffd6c8;
+  --teal: #0f8f83;
+  --card: rgba(255, 255, 255, 0.82);
+  --border: rgba(159, 124, 95, 0.28);
+  --shadow: 0 18px 45px rgba(40, 20, 8, 0.13);
+  --font-display: "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  --font-body: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 8%, #ffe2b6 0%, rgba(255, 226, 182, 0) 34%),
+    radial-gradient(circle at 90% 15%, #f9c8b7 0%, rgba(249, 200, 183, 0) 30%),
+    linear-gradient(120deg, #fffaf2 0%, #fff3de 52%, #ffe9d3 100%);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.landing {
+  width: min(1040px, 100% - 2.5rem);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  display: grid;
+  gap: 1.3rem;
+}
+
+.hero,
+.featureSection,
+.workflow,
+.finalCta {
+  backdrop-filter: blur(3px);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: clamp(1.2rem, 2.2vw, 2.2rem);
+}
+
+.eyebrow {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: #7c290d;
+  border: 1px solid #ef8a67;
+  border-radius: 999px;
+  padding: 0.38rem 0.78rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heroTitle {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 0.94;
+  margin-top: 1rem;
+  font-size: clamp(2.5rem, 9vw, 5.4rem);
+}
+
+.heroSubtitle {
+  margin-top: 1rem;
+  color: var(--muted);
+  max-width: 58ch;
+  font-size: clamp(1rem, 2.3vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.terminalLine {
+  margin-top: 1.2rem;
+  background: #1f1b18;
+  color: #f7f0e6;
+  border-radius: 12px;
+  border: 1px solid #55463a;
+  padding: 0.8rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  overflow-x: auto;
+}
+
+.terminalLine span {
+  color: #f59f7a;
+  margin-right: 0.5rem;
+}
+
+.ctaRow {
+  margin-top: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0.72rem 1rem;
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(255, 107, 53, 0.3);
+}
+
+.btnGhost {
+  border: 1px solid var(--border);
+  background: #fff7ed;
+}
+
+.featureSection h2,
+.workflow h2,
+.finalCta h2 {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+.cardGrid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.featureCard {
+  padding: 1rem;
+  border-radius: 14px;
+  background: #fffefc;
+  border: 1px solid var(--border);
+}
+
+.featureCard h3 {
+  font-size: 1rem;
+}
+
+.featureCard p {
+  color: var(--muted);
+  margin-top: 0.45rem;
+  line-height: 1.5;
+}
+
+.steps {
+  margin-top: 0.9rem;
+  margin-left: 1.1rem;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.finalCta p {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  max-width: 56ch;
+  line-height: 1.6;
+}
+
+.finalCta .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.reveal {
+  opacity: 0;
+  animation: riseIn 720ms cubic-bezier(0.24, 1, 0.33, 1) forwards;
+}
+
+.landing > :nth-child(1) {
+  animation-delay: 70ms;
+}
+
+.landing > :nth-child(2) {
+  animation-delay: 180ms;
+}
+
+.landing > :nth-child(3) {
+  animation-delay: 290ms;
+}
+
+.landing > :nth-child(4) {
+  animation-delay: 400ms;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .landing {
+    width: min(1040px, 100% - 1.2rem);
+    padding: 1.2rem 0 2rem;
+  }
+}
