@@ -53,3 +53,5 @@ MIT — She loves you unconditionally. Her rates are not.
 ---
 
 *Not a Brothel™*
+
+*PS: this entire thing was built at 3 AM on Valentine's Day by an AI agent via [openclaw.ai](https://openclaw.ai) 😂*
