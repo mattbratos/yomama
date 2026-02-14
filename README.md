@@ -33,8 +33,6 @@ $ npx yomama rent --type "emotional support" --hours 2
 
 **Is this legal?** We have lawyers and they said "technically."
 
-**Can I rent my own mom?** Yes, but she charges double. She's still mad about 2014.
-
 **Cancellation policy?** She'll say "it's fine." It's not fine.
 
 ## 🚀 Run locally
@@ -54,4 +52,4 @@ MIT — She loves you unconditionally. Her rates are not.
 
 *Not a Brothel™*
 
-*PS: this entire thing was built at 3 AM on Valentine's Day by an AI agent via [openclaw.ai](https://openclaw.ai) 😂*
+*PS: this entire thing was built at 3 AM to test [openclaw.ai](https://openclaw.ai) cool shit 😂
