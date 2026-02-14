@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "YoMama CLI | Rent Mom Energy from Your Terminal",
+  title: "YoMama | Rent Yo Mama From The Terminal",
   description:
-    "Landing page for a startup building a CLI tool for renting your mama on demand.",
+    "The only on-demand mama platform built for developers. Motivation, accountability, and unconditional love — one CLI command away.",
 };
 
 export default function RootLayout({
