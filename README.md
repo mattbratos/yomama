@@ -35,14 +35,46 @@ $ npx yomama rent --type "emotional support" --hours 2
 
 **Cancellation policy?** She'll say "it's fine." It's not fine.
 
+## 🏗️ Monorepo Structure
+
+Powered by [Turborepo](https://turbo.build/) + pnpm workspaces.
+
+```
+apps/
+  web/   — Next.js landing page (@yomama/web)
+  cli/   — CLI tool published as "yomama" on npm
+packages/  — shared packages (empty for now)
+```
+
 ## 🚀 Run locally
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm build
+```
+
+### Run the web app
+
+```bash
+pnpm --filter @yomama/web dev
 ```
 
 Open `http://localhost:3000` and witness the future of maternal infrastructure.
+
+### Run the CLI
+
+```bash
+node apps/cli/dist/index.js --help
+```
+
+## Scripts
+
+| Command       | Description                        |
+| ------------- | ---------------------------------- |
+| `pnpm build`  | Build all apps and packages        |
+| `pnpm dev`    | Start all apps in dev mode         |
+| `pnpm lint`   | Lint all apps and packages         |
+| `pnpm clean`  | Remove build artifacts             |
 
 ## 📜 License
 

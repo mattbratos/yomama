@@ -1,0 +1,17 @@
+{
+  "name": "yomama",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "yomama": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}
